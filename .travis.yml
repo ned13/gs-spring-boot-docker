@@ -9,4 +9,5 @@ before_script:
 script:
   # - test/run.sh
   - mvn package docker:build
+  - docker push ned13/gs-spring-boot-docker
 
