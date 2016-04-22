@@ -9,5 +9,6 @@ before_script:
 script:
   # - test/run.sh
   - mvn package docker:build
+  - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
   - docker push ned13/gs-spring-boot-docker
 
