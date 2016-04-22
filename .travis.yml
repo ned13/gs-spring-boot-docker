@@ -4,5 +4,5 @@ jdk:
 - oraclejdk8
 script:
 # - test/run.sh
-- complete/mvn package docker:build
+complete/mvn package docker:build
 
